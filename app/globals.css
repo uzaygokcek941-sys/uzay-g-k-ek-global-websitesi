@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: #08080b;
+  color: #cbd2e0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@layer components {
+  /* Tiny uppercase section label */
+  .overline {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-accent;
+  }
+
+  /* Elevated dark surface used for every card */
+  .surface {
+    @apply rounded-2xl border border-white/[0.07] bg-white/[0.025];
+  }
+
+  .surface-hover {
+    @apply transition duration-300 hover:border-white/[0.14] hover:bg-white/[0.045];
+  }
+
+  /* Icon chip */
+  .chip-icon {
+    @apply grid h-11 w-11 place-items-center rounded-xl border border-white/[0.08] bg-accent/10 text-accent;
+  }
+
+  /* Indigo gradient pill button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-b from-accent to-accent-deep px-6 py-3 text-sm font-medium text-white shadow-lg shadow-accent-deep/25 transition hover:from-accent-soft hover:to-accent;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/[0.06];
+  }
+
+  .tag {
+    @apply text-xs text-slate-500;
+  }
+}
+
+/* Background atmosphere: navy glow top, warm ember glow bottom-right */
+.bg-atmosphere {
+  background:
+    radial-gradient(1100px 540px at 50% -8%, rgba(99, 102, 241, 0.16), transparent 60%),
+    radial-gradient(900px 600px at 100% 100%, rgba(249, 115, 22, 0.07), transparent 55%),
+    #08080b;
+}
+
+/* Hide scrollbar for the horizontal scenario rail */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
