@@ -13,6 +13,12 @@ export function Footer() {
             <p className="mt-3 text-sm leading-relaxed text-slate-500">
               {FOOTER.tagline}
             </p>
+            <a
+              href={SITE.trSite}
+              className="mt-4 inline-flex items-center gap-1.5 text-sm text-slate-400 transition hover:text-white"
+            >
+              Türkçe (TR) <span aria-hidden>↗</span>
+            </a>
           </div>
 
           <div className="sm:text-right">

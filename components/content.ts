@@ -10,6 +10,8 @@ export const SITE = {
   whatsapp: "https://wa.me/905312918975",
   calendly: "https://calendly.com/vibeflowai-uzaygokcek/30min",
   hours: "Mon–Fri, 09:00–19:00 (GMT+3)",
+  trSite: "https://www.uzaygokcek.com",
+  enSite: "https://en.uzaygokcek.com",
 };
 
 export const NAV = [

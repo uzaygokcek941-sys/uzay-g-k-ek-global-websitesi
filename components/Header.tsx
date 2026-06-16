@@ -30,6 +30,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
+          <LangSwitch className="hidden sm:flex" />
           <a
             href={SITE.whatsapp}
             target="_blank"
@@ -72,9 +73,27 @@ export function Header() {
               <MessageCircle size={16} strokeWidth={2} />
               Message on WhatsApp
             </a>
+            <LangSwitch className="mt-3 self-start" />
           </nav>
         </div>
       ) : null}
     </header>
+  );
+}
+
+function LangSwitch({ className = "" }: { className?: string }) {
+  return (
+    <div
+      className={`items-center rounded-full border border-white/10 p-0.5 text-xs font-medium ${className}`}
+    >
+      <span className="rounded-full bg-white/10 px-2.5 py-1 text-white">EN</span>
+      <a
+        href={SITE.trSite}
+        className="rounded-full px-2.5 py-1 text-slate-400 transition hover:text-white"
+        aria-label="Türkçe — Turkish version"
+      >
+        TR
+      </a>
+    </div>
   );
 }

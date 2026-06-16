@@ -17,10 +17,18 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://uzaygokcek.com"),
+  metadataBase: new URL("https://en.uzaygokcek.com"),
   title: "Uzay Gökçek — n8n Automation, AI Agents & Websites for SMBs",
   description:
     "I build n8n automation, AI agents, and websites for small and mid-sized businesses across 15 industries. Delivered in days. You pay after you see it live.",
+  alternates: {
+    canonical: "https://en.uzaygokcek.com",
+    languages: {
+      en: "https://en.uzaygokcek.com",
+      tr: "https://www.uzaygokcek.com",
+      "x-default": "https://www.uzaygokcek.com",
+    },
+  },
   keywords: [
     "n8n automation",
     "AI agent",
