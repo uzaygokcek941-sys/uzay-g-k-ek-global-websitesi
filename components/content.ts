@@ -8,8 +8,7 @@ export const SITE = {
   phoneDisplay: "+90 531 291 89 75",
   phoneHref: "tel:+905312918975",
   whatsapp: "https://wa.me/905312918975",
-  // TODO: replace with your real Calendly link
-  calendly: "https://calendly.com/uzaygokcek/30min",
+  calendly: "https://calendly.com/vibeflowai-uzaygokcek/30min",
   hours: "Mon–Fri, 09:00–19:00 (GMT+3)",
 };
 
